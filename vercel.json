@@ -1,20 +1,11 @@
 {
   "version": 2,
   "builds": [
-    {
-      "src": "server/index.js",
-      "use": "@vercel/node"
-    }
+    { "src": "server/index.js", "use": "@vercel/node" }
   ],
   "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/server/index.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/server/index.js"
-    }
+    { "src": "/api/(.*)", "dest": "/server/index.js" },
+    { "src": "/(.*)", "dest": "/server/index.js" }
   ],
   "installCommand": "npm run install-server && npm run install-client"
 }
