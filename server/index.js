@@ -4,7 +4,6 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
-const path = require('path');
 
 const User = require('./models/User');
 const Student = require('./models/Student');
@@ -216,14 +215,6 @@ app.get('/api/admin/me', async (req, res) => {
   } catch (err) {
     res.status(401).json({ error: 'Invalid token' });
   }
-});
-
-// Serve static files from the React app build directory
-app.use(express.static(path.join(__dirname, '../client/dist')));
-
-// Catch all handler: send back React's index.html file for any non-API routes
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/dist/index.html'));
 });
 
 const server = app.listen(PORT, () => console.log(`Server listening on port ${PORT}`));
