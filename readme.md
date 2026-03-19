@@ -2,8 +2,9 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,50:16213e,100:0f3460&height=180&section=header&text=Resultify&fontSize=60&fontColor=58a6ff&animation=fadeIn&fontAlignY=40&desc=Student%20Result%20Viewing%20Platform&descAlignY=62&descSize=16&descColor=8b949e" width="100%"/>
 
-<br/>
 url : https://test-frontend-one-coral.vercel.app
+<br/>
+
 
 [![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Resultify-58a6ff?style=for-the-badge)](https://test-frontend-one-coral.vercel.app/)
 &nbsp;
